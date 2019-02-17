@@ -11,5 +11,10 @@
     "url": "\u0016https://github.com/JCVCoding/personal-site.git"
   },
   "author": "Josh Vladia",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-watch": "^5.0.1"
+  }
 }
