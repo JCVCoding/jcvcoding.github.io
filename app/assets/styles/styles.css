@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+section {
+    margin: 16px;
+    padding: 16px;
+}
+
 .site-header {
     width: 100%;
     top: 0;
