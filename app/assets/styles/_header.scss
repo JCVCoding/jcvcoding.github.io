@@ -1,0 +1,47 @@
+.site-header {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: .5em 1em;
+    background: $slateGray;
+    font-weight: 700;
+    font-size: 1.2em;
+
+    &__logo {
+        width: 15%;
+        display: inline-block;
+    }
+
+    &__logo-item {
+        color: $flashWhite;
+        text-decoration: none;
+    }
+
+    &__menu-icon {
+        
+    }
+}
+
+.nav-bar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    text-align: right;
+
+    a {
+        color: $flashWhite;
+        text-decoration: none;
+    }
+
+    &__item {
+        display: inline-block;
+        list-style: none;
+        margin: 0 1rem;
+    }
+
+    @media (max-width: 31rem){
+        display: none;
+    }
+}

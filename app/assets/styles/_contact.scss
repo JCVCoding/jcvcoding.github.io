@@ -1,0 +1,29 @@
+.contact {
+
+    &__header {
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+
+        input {
+            margin-bottom: .25rem;
+            padding: .5rem .75rem;
+        }
+
+        textarea {
+         @extend input;
+        }
+    }
+
+    &__links {
+       
+    }
+
+    &__link {
+
+    }
+}

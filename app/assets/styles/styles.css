@@ -1,49 +1,108 @@
-* {
-    box-sizing: border-box;
-}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: .5rem 0;
+  padding: 1rem; }
+  .hero__header {
+    font-weight: 700;
+    font-size: 4rem; }
+  .hero__button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 8px;
+    font-family: 'Arvo', serif; }
 
-body {
-    margin: 0;
-}
-
-section {
-    margin: 16px;
-    padding: 16px;
-}
+.about-me {
+  margin-left: 0;
+  padding: 2rem;
+  background: #ff6b6b;
+  text-align: center;
+  line-height: 1.5; }
+  .about-me__header {
+    font-size: 2.5rem; }
+  .about-me__section {
+    border: 1px solid #f7fff7;
+    padding: 3.125rem 1.875rem; }
+  .about-me__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #f0f2ef; }
+    @media (max-width: 31rem) {
+      .about-me__skills {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        .about-me__skills ul {
+          list-style: none;
+          padding-left: 0; }
+        .about-me__skills li {
+          line-height: 2; } }
 
 .site-header {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: .5em 1em;
-    background: rgb(90, 90, 90);
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-.site-header__logo {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: .5em 1em;
+  background: #2f4858;
+  font-weight: 700;
+  font-size: 1.2em; }
+  .site-header__logo {
     width: 15%;
-    display: inline-block;
-}
-
-.site-header__logo a {
-    text-decoration: none;
-}
+    display: inline-block; }
+  .site-header__logo-item {
+    color: #f0f2ef;
+    text-decoration: none; }
 
 .nav-bar {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 80%;
-    text-align: right;
-}
-
-.nav-bar a {
-    text-decoration: none;
-}
-
-.nav-bar__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  text-align: right; }
+  .nav-bar a {
+    color: #f0f2ef;
+    text-decoration: none; }
+  .nav-bar__item {
     display: inline-block;
     list-style: none;
-    margin: 0 16px;
-}
+    margin: 0 1rem; }
+  @media (max-width: 31rem) {
+    .nav-bar {
+      display: none; } }
+
+footer {
+  background: #2f4858;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    text-align: center;
+    color: #f7fff7;
+    font-size: .8rem; }
+
+.contact__header {
+  text-align: center; }
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem; }
+  .contact__form input, .contact__form textarea {
+    margin-bottom: .25rem;
+    padding: .5rem .75rem; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Arvo', serif;
+  background-color: #f0f2ef; }

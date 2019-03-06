@@ -1,0 +1,14 @@
+footer {
+    background: $slateGray;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        color: $mintCream;
+        font-size: .8rem;
+    }
+}
