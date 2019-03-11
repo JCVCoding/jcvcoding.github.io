@@ -1,4 +1,6 @@
 .contact {
+    font-family: 'Arvo', serif;
+
 
     &__header {
         text-align: center;
@@ -19,11 +21,23 @@
         }
     }
 
-    &__links {
-       
+    &__btn {
+        margin: 1rem auto;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        font-family: inherit;
+        width: 10rem;
     }
-
+    
     &__link {
-
+    
     }
+}
+
+.social__links {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }

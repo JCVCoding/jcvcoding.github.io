@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Poppins" rel="stylesheet"> 
         <link rel="stylesheet" href="./assets/styles/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
 
@@ -30,18 +31,20 @@
        <!-- Hero Section -->
         <div class="hero">
             <h1 class="hero__header">Hi there, my name is Josh.</h1>
-            <button class="hero__button">Email Me</button>
+            <button class="hero__button button">Email Me</button>
         </div>
         <!-- End of Hero Section -->
         
         <!-- About Section -->
         <div class="about-me">
-            <h1 class="about-me__header">About Me</h1>
-            <p class="about-me__description">I am currently a student at Kennesaw State University working towards a Master of Science in Computer Science.
-                Before pursuing post-grad studies in Computer Science I graduated from the University of Georgia (Go Dawgs!) with a BBA in Real Estate. 
-                My interest in web development stemmed from my long time interest in programming and a love for aesthetically pleasing websites
-                and user interfaces. 
-            </p>
+            <div class="about-me__container--top">
+                <h1 class="about-me__header">About Me</h1>
+                <p class="about-me__description">I am currently a student at Kennesaw State University working towards a Master of Science in Computer Science.
+                    Before pursuing post-grad studies in Computer Science I graduated from the University of Georgia (Go Dawgs!) with a BBA in Real Estate. 
+                    My interest in web development stemmed from my long time interest in programming and a love for aesthetically pleasing websites
+                    and user interfaces. 
+                </p>
+            </div>
             <div class="about-me__skills">
                 <div class="about-me__section">
                     <h2 class="about-me__sub-header">Front-End Knowledge:</h2>
@@ -92,14 +95,13 @@
                 <input type="text" id="name" name="user_name" placeholder="Name">
                 <input type="email" name="user_email" id="email" placeholder="E-mail">
                 <textarea name="user_message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button>Click me!</button>
+                <button class="contact__btn button">Click me!</button>
             </form>
         </section>
         <!-- End of Contact Section -->
-        <div class="contact__links">
-                <i class="contact__link">JCVCoding@gmail.com</i>
-                <i class="contact__link">LinkedIn</i>
-                <i class="contact__link">GitHub</i>
+        <div class="social__links">
+                <a class="social__links__button button"><i class="fab fa-linkedin fa-3x fa-fw"></i></a>
+                <a class="social__links__button button"><i class="fab fa-github-square fa-3x fa-fw"></i></a>
         </div>
        <footer>
            <p>Designed and created by Josh Vladia 2019</p>

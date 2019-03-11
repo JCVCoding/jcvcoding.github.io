@@ -18,10 +18,12 @@
 
 .about-me {
   margin-left: 0;
-  padding: 2rem;
-  background: #ff6b6b;
   text-align: center;
   line-height: 1.5; }
+  .about-me__container--top {
+    background: #ff6b6b;
+    padding: 1rem;
+    line-height: 2; }
   .about-me__header {
     font-size: 2.5rem; }
   .about-me__section {
@@ -88,16 +90,30 @@ footer {
     color: #f7fff7;
     font-size: .8rem; }
 
-.contact__header {
-  text-align: center; }
+.contact {
+  font-family: 'Arvo', serif; }
+  .contact__header {
+    text-align: center; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem; }
+    .contact__form input, .contact__form textarea {
+      margin-bottom: .25rem;
+      padding: .5rem .75rem; }
+  .contact__btn {
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    font-family: inherit;
+    width: 10rem; }
 
-.contact__form {
+.social__links {
+  height: 4rem;
   display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem; }
-  .contact__form input, .contact__form textarea {
-    margin-bottom: .25rem;
-    padding: .5rem .75rem; }
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
 
 * {
   box-sizing: border-box; }
@@ -106,3 +122,6 @@ body {
   margin: 0;
   font-family: 'Arvo', serif;
   background-color: #f0f2ef; }
+
+.button {
+  cursor: pointer; }
