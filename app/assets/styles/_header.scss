@@ -1,47 +1,73 @@
-.site-header {
-    font-family: 'Poppins', sans-serif;
+.header {
+    font-family: 'Noto Sans JP', sans-serif;
     width: 100%;
     top: 0;
     left: 0;
-    padding: .5em 1em;
-    background: $slateGray;
+    background: $flashWhite;
     font-weight: 700;
     font-size: 1.2em;
 
     &__logo {
-        width: 15%;
+        width: 25vw;
         display: inline-block;
     }
 
     &__logo-item {
-        color: $flashWhite;
+        color: $pastelRed;
         text-decoration: none;
-    }
-
-    &__menu-icon {
-        
+        width: 100%;
     }
 }
 
-.nav-bar {
-    display: inline-block;
-    margin: 0;
+.toggle-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
     padding: 0;
-    width: 80%;
-    text-align: right;
 
-    a {
-        color: $flashWhite;
-        text-decoration: none;
-    }
+    &__icon {
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        top: 33%;
+        left: 33%;
 
-    &__item {
-        display: inline-block;
-        list-style: none;
-        margin: 0 1rem;
-    }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: 3px;
+            background-color: $pastelRed;
+        }
 
-    @media (max-width: 31rem){
-        display: none;
+        span {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: inherit;
+            height: 3px;
+            background-color: $pastelRed;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: inherit;
+            height: 3px;
+            background-color: $pastelRed;
+        }
     }
+}
+
+button {
+    border-radius: 0;
+    border: none;
 }

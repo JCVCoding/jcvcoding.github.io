@@ -3,6 +3,7 @@ $slateGray: #2f4858;
 $flashWhite: #f0f2ef;
 $pastelRed: #ff6b6b;
 $mintCream: #f7fff7;
+$momColor: #89043d;
 
 @import "_hero";
 @import "about-me";
@@ -16,7 +17,7 @@ $mintCream: #f7fff7;
 
 body {
     margin: 0;
-    font-family: 'Arvo', serif;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: $flashWhite;
 }
 

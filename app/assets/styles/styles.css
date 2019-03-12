@@ -3,25 +3,18 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: .5rem 0;
-  padding: 1rem; }
+  height: 90vh; }
   .hero__header {
     font-weight: 700;
     font-size: 4rem; }
-  .hero__button {
-    width: 8rem;
-    height: 2rem;
-    border-radius: 8px;
-    font-family: 'Arvo', serif; }
 
 .about-me {
   margin-left: 0;
   text-align: center;
   line-height: 1.5; }
   .about-me__container--top {
-    background: #ff6b6b;
+    background: #f7fff7;
+    color: #2f4858;
     padding: 1rem;
     line-height: 2; }
   .about-me__header {
@@ -45,38 +38,64 @@
         .about-me__skills li {
           line-height: 2; } }
 
-.site-header {
-  font-family: 'Poppins', sans-serif;
+.header {
+  font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
   top: 0;
   left: 0;
-  padding: .5em 1em;
-  background: #2f4858;
+  background: #f0f2ef;
   font-weight: 700;
   font-size: 1.2em; }
-  .site-header__logo {
-    width: 15%;
+  .header__logo {
+    width: 25vw;
     display: inline-block; }
-  .site-header__logo-item {
-    color: #f0f2ef;
-    text-decoration: none; }
+  .header__logo-item {
+    color: #ff6b6b;
+    text-decoration: none;
+    width: 100%; }
 
-.nav-bar {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  text-align: right; }
-  .nav-bar a {
-    color: #f0f2ef;
-    text-decoration: none; }
-  .nav-bar__item {
-    display: inline-block;
-    list-style: none;
-    margin: 0 1rem; }
-  @media (max-width: 31rem) {
-    .nav-bar {
-      display: none; } }
+.toggle-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+  padding: 0; }
+  .toggle-menu__icon {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 33%;
+    left: 33%; }
+    .toggle-menu__icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: 3px;
+      background-color: #ff6b6b; }
+    .toggle-menu__icon span {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: inherit;
+      height: 3px;
+      background-color: #ff6b6b; }
+    .toggle-menu__icon::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: inherit;
+      height: 3px;
+      background-color: #ff6b6b; }
+
+button {
+  border-radius: 0;
+  border: none; }
 
 footer {
   background: #2f4858;
@@ -120,7 +139,7 @@ footer {
 
 body {
   margin: 0;
-  font-family: 'Arvo', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #f0f2ef; }
 
 .button {
