@@ -6,6 +6,7 @@
     background: $flashWhite;
     font-weight: 700;
     font-size: 1.2em;
+    position: fixed;
 
     &__logo {
         width: 25vw;
@@ -41,7 +42,7 @@
             top: 0;
             left: 0;
             width: inherit;
-            height: 3px;
+            height: 2px;
             background-color: $pastelRed;
         }
 
@@ -51,7 +52,7 @@
             top: 8px;
             left: 0;
             width: inherit;
-            height: 3px;
+            height: 2px;
             background-color: $pastelRed;
         }
 
@@ -61,7 +62,7 @@
             bottom: 0;
             left: 0;
             width: inherit;
-            height: 3px;
+            height: 2px;
             background-color: $pastelRed;
         }
     }

@@ -12,3 +12,37 @@ footer {
         font-size: .8rem;
     }
 }
+
+.page-break {
+    margin-bottom: 4rem;
+
+    .top-button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .7s cubic-bezier(.19,1,.22,1);
+
+        &__arrow {
+            position: relative;
+            height: 60px;
+            width: 60px;
+            
+
+            &::before {
+                display: inline-block;
+                vertical-align: center;
+                top: 100%;
+                left: 8px;
+                margin-top: -1.3rem;
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                border: 6px solid $slateGray;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

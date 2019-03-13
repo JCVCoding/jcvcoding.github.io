@@ -13,8 +13,8 @@
   text-align: center;
   line-height: 1.5; }
   .about-me__container--top {
-    background: #f7fff7;
-    color: #2f4858;
+    background: #2f4858;
+    color: #f0f2ef;
     padding: 1rem;
     line-height: 2; }
   .about-me__header {
@@ -45,7 +45,8 @@
   left: 0;
   background: #f0f2ef;
   font-weight: 700;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  position: fixed; }
   .header__logo {
     width: 25vw;
     display: inline-block; }
@@ -74,7 +75,7 @@
       top: 0;
       left: 0;
       width: inherit;
-      height: 3px;
+      height: 2px;
       background-color: #ff6b6b; }
     .toggle-menu__icon span {
       content: "";
@@ -82,7 +83,7 @@
       top: 8px;
       left: 0;
       width: inherit;
-      height: 3px;
+      height: 2px;
       background-color: #ff6b6b; }
     .toggle-menu__icon::after {
       content: "";
@@ -90,7 +91,7 @@
       bottom: 0;
       left: 0;
       width: inherit;
-      height: 3px;
+      height: 2px;
       background-color: #ff6b6b; }
 
 button {
@@ -109,8 +110,34 @@ footer {
     color: #f7fff7;
     font-size: .8rem; }
 
+.page-break {
+  margin-bottom: 4rem; }
+  .page-break .top-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1); }
+    .page-break .top-button__arrow {
+      position: relative;
+      height: 60px;
+      width: 60px; }
+      .page-break .top-button__arrow::before {
+        display: inline-block;
+        vertical-align: center;
+        top: 100%;
+        left: 8px;
+        margin-top: -1.3rem;
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border: 6px solid #2f4858;
+        transform: rotate(45deg); }
+
 .contact {
-  font-family: 'Arvo', serif; }
+  font-family: 'Noto Sans JP', sans-serif; }
   .contact__header {
     text-align: center; }
   .contact__form {
