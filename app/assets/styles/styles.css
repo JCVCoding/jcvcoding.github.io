@@ -3,13 +3,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 90vh; }
+  height: 100vh; }
   .hero__header {
     font-weight: 700;
-    font-size: 4rem; }
+    font-size: 2rem; }
 
 .about-me {
-  margin-left: 0;
   text-align: center;
   line-height: 1.5; }
   .about-me__container--top {
@@ -17,26 +16,8 @@
     color: #f0f2ef;
     padding: 1rem;
     line-height: 2; }
-  .about-me__header {
-    font-size: 2.5rem; }
-  .about-me__section {
-    border: 1px solid #f7fff7;
-    padding: 3.125rem 1.875rem; }
-  .about-me__skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: #f0f2ef; }
-    @media (max-width: 31rem) {
-      .about-me__skills {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center; }
-        .about-me__skills ul {
-          list-style: none;
-          padding-left: 0; }
-        .about-me__skills li {
-          line-height: 2; } }
+  .about-me__content {
+    padding: 1rem; }
 
 .header {
   font-family: 'Noto Sans JP', sans-serif;
@@ -136,6 +117,105 @@ footer {
         border: 6px solid #2f4858;
         transform: rotate(45deg); }
 
+.social__links ul {
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  padding: .75rem 0; }
+
+.social__links li {
+  display: inline-block;
+  cursor: pointer; }
+
+.social__links__button {
+  margin: 0 10px; }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #f0f2ef; }
+  .skills__header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400; }
+  .skills__header--section {
+    text-decoration-line: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-weight: 100; }
+  .skills__list--item.postgre {
+    background-image: url(../images/PostgreSQL_logo.3colors.120x120.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto;
+    transform: translateX(1.5rem); }
+  .skills__list--item.jquery {
+    background-image: url(../images/jquery-2.svg);
+    transform: translateY(1.3rem);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills__list--item.PostCSS {
+    background-image: url(../images/postcss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills__list--item.mongodb {
+    background-image: url(../images/mongodb.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills .fa-plus {
+    transform: translateY(-0.75rem);
+    color: #2f4858; }
+  .skills .fa-html5 {
+    color: #e34f26; }
+  .skills .fa-css3-alt {
+    color: blue; }
+  .skills .fa-js {
+    color: #f7df1e; }
+  .skills .fa-node {
+    color: #6cc24a; }
+  .skills .fa-npm {
+    color: #cb3837; }
+  .skills .fa-git {
+    color: #4078c0; }
+  .skills .fa-github-square {
+    color: #4078c0; }
+  .skills .fa-java {
+    color: #ff0000; }
+  .skills .fa-sass {
+    color: #c69; }
+  .skills .fa-gulp {
+    color: #db4446; }
+  @media (max-width: 31rem) {
+    .skills {
+      flex-direction: column; }
+      .skills__list {
+        list-style: none;
+        padding-left: 0; }
+      .skills__list--item {
+        line-height: 2;
+        text-align: center;
+        height: 3rem;
+        margin: 2rem auto; }
+        .skills__list--item i {
+          margin: .5rem .5rem; } }
+
 .contact {
   font-family: 'Noto Sans JP', sans-serif; }
   .contact__header {
@@ -153,13 +233,6 @@ footer {
     border-radius: 8px;
     font-family: inherit;
     width: 10rem; }
-
-.social__links {
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem; }
 
 * {
   box-sizing: border-box; }

@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+    
     
 
     &__header {
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }

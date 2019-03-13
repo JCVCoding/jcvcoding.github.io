@@ -3,12 +3,12 @@ $slateGray: #2f4858;
 $flashWhite: #f0f2ef;
 $pastelRed: #ff6b6b;
 $mintCream: #f7fff7;
-$momColor: #89043d;
 
 @import "_hero";
 @import "about-me";
 @import "_header";
-@import"_footer";
+@import "_footer";
+@import "skills";
 @import "contact";
 
 * {

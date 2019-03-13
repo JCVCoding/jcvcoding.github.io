@@ -46,3 +46,23 @@ footer {
         }
     }
 }
+
+.social__links {
+    
+
+    ul {
+        list-style: none;
+        text-align: center;
+        overflow: hidden;
+        padding: .75rem 0;
+    }
+
+    li {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    &__button {
+        margin: 0 10px;
+    }
+}

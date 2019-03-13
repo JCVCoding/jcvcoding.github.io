@@ -6,7 +6,7 @@
         <title>Joshua Vladia | Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400,700" rel="stylesheet"> 
         <link rel="stylesheet" href="./assets/styles/styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
@@ -23,61 +23,59 @@
         
        <!-- Hero Section -->
         <div class="hero">
-            <h1 class="hero__header">WHAT UP PIMPS!</h1>
+            <h1 class="hero__header">Joshua Vladia.
+                Developer.
+                Atlanta, GA.</h1>
         </div>
         <!-- End of Hero Section -->
         
         <!-- About Section -->
         <div class="about-me">
             <div class="about-me__container--top">
-                <h1 class="about-me__header">About Me</h1>
-                <p class="about-me__description">I am currently a student at Kennesaw State University working towards a Master of Science in Computer Science.
-                    Before pursuing post-grad studies in Computer Science I graduated from the University of Georgia (Go Dawgs!) with a BBA in Real Estate. 
-                    My interest in web development stemmed from my long time interest in programming and a love for aesthetically pleasing websites
-                    and user interfaces. 
-                </p>
-            </div>
-            <div class="about-me__skills">
-                <div class="about-me__section">
-                    <h2 class="about-me__sub-header">Front-End Knowledge:</h2>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>Bootstrap</li>
-                        <li>jQuery</li>
-                        <li>Sass/Postcss</li>
-                    </ul>
-                </div>
-                <div class="about-me__section">
-                    <h2 class="about-me__sub-header">Back-End Knowledge:</h2>
-                    <ul>
-                        <li>Node.js/Express.js</li>
-                        <li>MongoDB/Mongoose</li>
-                        <li>MySQL</li>
-                        <li>REST</li>
-                        <li>Authentication</li>
-                        <li>Heroku</li>
-                    </ul>
-                </div>
-                <div class="about-me__section">
-                    <h2 class="about-me__sub-header">Miscellaneous:</h2>
-                    <ul>
-                        <li>Java</li>
-                        <li>Git/Github</li>
-                        <li>NPM</li>
-                        <li>Gulp</li>
-                        <li>Windows / macOS</li>
-                    </ul>
-                </div>
+                <p class="about-me__content">My journey into development began last year and stemmed from my simple desire to create cool things for use on the web. I get a kick out of creating even the simplest of programs.</p>
+                <p class="about-me__content">I am constantly looking to learn new technologies as well as sharpen the tools I currently know.</p>
             </div>
         </div>
         <!-- End of About Section -->
 
-        <!-- Projects Section -->
-        <section>
-            <div>
-                <h1>Portfolio</h1>
+        <!-- Skills Section -->
+        <div class="skills">
+            <h1 class="skills__header">I have experience working with...</h1>
+            <div class="skills__section">
+                <h3 class="skills__header--section">FRONT END</h3>
+                <ul class="skills__list">
+                    <li class="skills__list--item"><i class="fab fa-html5 fa-3x"></i></li>
+                    <li class="skills__list--item"><i class="fab fa-css3-alt fa-3x"></i></li>
+                    <li class="skills__list--item"><i class="fab fa-js fa-3x"></i></li>
+                    <li class="skills__list--item jquery"><a href="assets/images/jquery-2.svg"></a></li>
+                    <li class="skills__list--item"><i class="fab fa-sass fa-3x"></i></li>
+                    <li class="skills__list--item PostCSS"><a href="assets/images/postcss.svg"></a></li>
+                </ul>
             </div>
+            <div class="skills__section">
+                <h3 class="skills__header--section">BACK END</h3>
+                <ul class="skills__list">
+                    <li class="skills__list--item"><i class="fab fa-node fa-3x"></i></li>
+                    <li class="skills__list--item mongodb"><a href="assets/images/mongodb.svg"></a></li>
+                    <li class="skills__list--item postgre"><a href="assets/images/PostgreSQL_logo.3colors.120x120.png"></a></li>
+                </ul>
+            </div>
+            <div class="skills__section">
+                <h3 class="skills__header--section">MISC.</h3>
+                <ul class="skills__list">
+                    <li class="skills__list--item"><i class="fab fa-npm fa-3x"></i></li>
+                    <li class="skills__list--item"><i class="fab fa-gulp fa-3x"></i></li>
+                    <li class="skills__list--item"><i class="fab fa-git fa-3x"></i><i class="fas fa-plus fa-lg"></i><i class="fab fa-github-square fa-3x"></i></li>
+                    <li class="skills__list--item"><i class="fab fa-java fa-3x"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of Skills Section -->
+
+        <!-- Projects Section -->
+        <section class="portfolio">
+            <h1>Portfolio</h1>
+            <div></div>
         </section>
         <!-- End of Projects Section -->
 
@@ -88,18 +86,25 @@
                 <input type="text" id="name" name="user_name" placeholder="Name">
                 <input type="email" name="user_email" id="email" placeholder="E-mail">
                 <textarea name="user_message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class="contact__btn button">Click me!</button>
+                <button class="contact__btn button">SEND</button>
             </form>
         </section>
         <!-- End of Contact Section -->
+        
         <div class="page-break">
-            <button class="top-button">
-                <div class="top-button__arrow"></div>
+             <button class="top-button">
+                    <div class="top-button__arrow"></div>
             </button>
         </div>
         <div class="social__links">
-                <a class="social__links__button button"><i class="fab fa-linkedin fa-3x fa-fw"></i></a>
-                <a class="social__links__button button"><i class="fab fa-github-square fa-3x fa-fw"></i></a>
+            <ul>
+                <li>
+                    <a class="social__links__button">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="social__links__button">GitHub</i></a>
+                </li>
+            </ul>
         </div>
        <footer>
            <p>Designed and created by Josh Vladia 2019</p>
