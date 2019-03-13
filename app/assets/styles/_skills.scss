@@ -1,0 +1,105 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    background: $flashWhite;
+
+    &__header {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    
+    &__header--section {
+        text-decoration-line: underline;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    @mixin icons {
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 6rem;
+        height: 3rem;
+        margin: 2rem auto;
+    }
+    
+    &__list--item.postgre {
+        background-image: url(../images/PostgreSQL_logo.3colors.120x120.png);
+        @include icons;
+        transform: translateX(1.5rem);
+    }
+    
+    &__list--item.jquery {
+        background-image: url(../images/jquery-2.svg);
+        transform: translateY(1.3rem);
+        @include icons;
+    }
+    
+    &__list--item.PostCSS {
+        background-image: url(../images/postcss.svg);
+        @include icons;
+    }
+    
+    &__list--item.mongodb {
+        background-image: url(../images/mongodb.svg);
+        @include icons;
+    }
+
+    .fa-plus {
+        transform: translateY(-.75rem);
+        color: $slateGray;
+    }
+    .fa-html5 {
+        color: #e34f26;
+    }
+    .fa-css3-alt {
+        color: blue;
+    }
+    .fa-js {
+        color: #f7df1e;
+    }
+    .fa-node {
+        color: #6cc24a;
+    }
+    .fa-npm {
+        color: #cb3837;
+    }
+    .fa-git {
+        color: #4078c0;
+    }
+    .fa-github-square {
+        color: #4078c0;
+    }
+    .fa-java {
+        color: #ff0000;
+    }
+    .fa-sass {
+        color: #c69;
+    }
+    .fa-gulp {
+        color: #db4446;
+    }
+    
+    @media (max-width: 31rem) {
+        flex-direction: column;
+
+        &__list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        &__list--item {
+            line-height: 2;
+            text-align: center;
+            height: 3rem;
+            margin: 2rem auto;
+            i {
+                margin: .5rem .5rem;
+            }
+        }
+    }
+}
