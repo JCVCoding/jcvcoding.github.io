@@ -1,14 +1,22 @@
 .hero {
+    color: $slateGray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
     
-    
-
-    &__header {
+    &__header--large {
         font-weight: 700;
         font-size: 2rem;
+    }
+
+    &__header--small {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: inherit;
     }
 }

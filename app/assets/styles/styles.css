@@ -1,12 +1,18 @@
 .hero {
+  color: #2f4858;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100vh; }
-  .hero__header {
+  .hero__header--large {
     font-weight: 700;
     font-size: 2rem; }
+  .hero__header--small {
+    font-weight: 100;
+    font-size: 1.5rem; }
+  .hero a {
+    color: inherit; }
 
 .about-me {
   text-align: center;
@@ -26,8 +32,7 @@
   left: 0;
   background: #f0f2ef;
   font-weight: 700;
-  font-size: 1.2em;
-  position: fixed; }
+  font-size: 1.2em; }
   .header__logo {
     width: 25vw;
     display: inline-block; }
@@ -57,7 +62,7 @@
       left: 0;
       width: inherit;
       height: 2px;
-      background-color: #ff6b6b; }
+      background-color: #2f4858; }
     .toggle-menu__icon span {
       content: "";
       position: absolute;
@@ -65,7 +70,7 @@
       left: 0;
       width: inherit;
       height: 2px;
-      background-color: #ff6b6b; }
+      background-color: #2f4858; }
     .toggle-menu__icon::after {
       content: "";
       position: absolute;
@@ -73,7 +78,7 @@
       left: 0;
       width: inherit;
       height: 2px;
-      background-color: #ff6b6b; }
+      background-color: #2f4858; }
 
 button {
   border-radius: 0;
@@ -92,30 +97,12 @@ footer {
     font-size: .8rem; }
 
 .page-break {
-  margin-bottom: 4rem; }
-  .page-break .top-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1); }
-    .page-break .top-button__arrow {
-      position: relative;
-      height: 60px;
-      width: 60px; }
-      .page-break .top-button__arrow::before {
-        display: inline-block;
-        vertical-align: center;
-        top: 100%;
-        left: 8px;
-        margin-top: -1.3rem;
-        content: '';
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        border: 6px solid #2f4858;
-        transform: rotate(45deg); }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto; }
+  .page-break a i {
+    color: #2f4858; }
 
 .social__links ul {
   list-style: none;
@@ -126,6 +113,10 @@ footer {
 .social__links li {
   display: inline-block;
   cursor: pointer; }
+
+.social__links a {
+  text-decoration: none;
+  color: #2f4858; }
 
 .social__links__button {
   margin: 0 10px; }
@@ -140,11 +131,12 @@ footer {
     font-size: 2em;
     font-weight: 400; }
   .skills__header--section {
-    text-decoration-line: underline;
+    text-decoration: underline;
     text-align: center;
     font-weight: bolder;
     font-size: 1.5rem;
-    font-weight: 100; }
+    font-weight: 700;
+    letter-spacing: .3rem; }
   .skills__list--item.postgre {
     background-image: url(../images/PostgreSQL_logo.3colors.120x120.png);
     background-size: contain;
@@ -217,9 +209,11 @@ footer {
           margin: .5rem .5rem; } }
 
 .contact {
-  font-family: 'Noto Sans JP', sans-serif; }
+  font-family: inherit; }
   .contact__header {
-    text-align: center; }
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400; }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -230,9 +224,16 @@ footer {
   .contact__btn {
     margin: 1rem auto;
     padding: 1rem 1rem;
-    border-radius: 8px;
+    border-radius: .5rem;
+    border: 1px solid #2f4858;
     font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 100;
+    letter-spacing: .25rem;
     width: 10rem; }
+  .contact__btn:hover {
+    color: #f0f2ef;
+    background-color: #ff6b6b; }
 
 * {
   box-sizing: border-box; }

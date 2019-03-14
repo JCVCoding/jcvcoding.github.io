@@ -6,7 +6,7 @@
     background: $flashWhite;
     font-weight: 700;
     font-size: 1.2em;
-    position: fixed;
+    
 
     &__logo {
         width: 25vw;
@@ -43,7 +43,7 @@
             left: 0;
             width: inherit;
             height: 2px;
-            background-color: $pastelRed;
+            background-color: $slateGray;
         }
 
         span {
@@ -53,7 +53,7 @@
             left: 0;
             width: inherit;
             height: 2px;
-            background-color: $pastelRed;
+            background-color: $slateGray;
         }
 
         &::after {
@@ -63,7 +63,7 @@
             left: 0;
             width: inherit;
             height: 2px;
-            background-color: $pastelRed;
+            background-color: $slateGray;
         }
     }
 }

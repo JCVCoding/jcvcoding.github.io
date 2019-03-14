@@ -1,9 +1,11 @@
 .contact {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: inherit;
 
 
     &__header {
         text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
     }
 
     &__form {
@@ -24,11 +26,20 @@
     &__btn {
         margin: 1rem auto;
         padding: 1rem 1rem;
-        border-radius: 8px;
+        border-radius: .5rem;
+        border: 1px solid $slateGray;
         font-family: inherit;
+        font-size: 1.25rem;
+        font-weight: 100;
+        letter-spacing: .25rem;
         width: 10rem;
     }
     
+    &__btn:hover {
+        color: $flashWhite;
+        background-color: $pastelRed;
+    }
+
     &__link {
     
     }
