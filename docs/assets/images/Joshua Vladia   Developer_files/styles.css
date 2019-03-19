@@ -1,0 +1,262 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; }
+  .hero__header {
+    font-weight: 700;
+    font-size: 2rem; }
+
+.about-me {
+  text-align: center;
+  line-height: 1.5; }
+  .about-me__container--top {
+    background: #2f4858;
+    color: #f0f2ef;
+    padding: 1rem;
+    line-height: 2; }
+  .about-me__content {
+    padding: 1rem; }
+
+.header {
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #f0f2ef;
+  font-weight: 700;
+  font-size: 1.2em;
+  position: fixed; }
+  .header__logo {
+    width: 25vw;
+    display: inline-block; }
+  .header__logo-item {
+    color: #ff6b6b;
+    text-decoration: none;
+    width: 100%; }
+
+.toggle-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+  padding: 0; }
+  .toggle-menu__icon {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 33%;
+    left: 33%; }
+    .toggle-menu__icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: 2px;
+      background-color: #ff6b6b; }
+    .toggle-menu__icon span {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: inherit;
+      height: 2px;
+      background-color: #ff6b6b; }
+    .toggle-menu__icon::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: inherit;
+      height: 2px;
+      background-color: #ff6b6b; }
+
+button {
+  border-radius: 0;
+  border: none; }
+
+footer {
+  background: #2f4858;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    text-align: center;
+    color: #f7fff7;
+    font-size: .8rem; }
+
+.page-break {
+  margin-bottom: 4rem; }
+  .page-break .top-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    overflow: hidden; }
+    .page-break .top-button__arrow {
+      position: relative;
+      height: 60px;
+      width: 60px; }
+      .page-break .top-button__arrow::after {
+        display: inline-block;
+        top: 100%;
+        left: 8px;
+        margin-top: -1.3rem;
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border: 6px solid #2f4858;
+        transform: rotate(45deg); }
+      .page-break .top-button__arrow::after:hover {
+        display: inline-block;
+        top: 100%;
+        left: 8px;
+        margin-top: -1.3rem;
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border: 6px solid #ff6b6b;
+        transform: rotate(60deg); }
+
+.social__links ul {
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  padding: .75rem 0; }
+
+.social__links li {
+  display: inline-block;
+  cursor: pointer; }
+
+.social__links a {
+  text-decoration: none; }
+
+.social__links__button {
+  margin: 0 10px; }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #f0f2ef; }
+  .skills__header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400; }
+  .skills__header--section {
+    text-decoration-line: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-weight: 100; }
+  .skills__list--item.postgre {
+    background-image: url(../images/PostgreSQL_logo.3colors.120x120.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto;
+    transform: translateX(1.5rem); }
+  .skills__list--item.jquery {
+    background-image: url(../images/jquery-2.svg);
+    transform: translateY(1.3rem);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills__list--item.PostCSS {
+    background-image: url(../images/postcss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills__list--item.mongodb {
+    background-image: url(../images/mongodb.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem auto; }
+  .skills .fa-plus {
+    transform: translateY(-0.75rem);
+    color: #2f4858; }
+  .skills .fa-html5 {
+    color: #e34f26; }
+  .skills .fa-css3-alt {
+    color: blue; }
+  .skills .fa-js {
+    color: #f7df1e; }
+  .skills .fa-node {
+    color: #6cc24a; }
+  .skills .fa-npm {
+    color: #cb3837; }
+  .skills .fa-git {
+    color: #4078c0; }
+  .skills .fa-github-square {
+    color: #4078c0; }
+  .skills .fa-java {
+    color: #ff0000; }
+  .skills .fa-sass {
+    color: #c69; }
+  .skills .fa-gulp {
+    color: #db4446; }
+  @media (max-width: 31rem) {
+    .skills {
+      flex-direction: column; }
+      .skills__list {
+        list-style: none;
+        padding-left: 0; }
+      .skills__list--item {
+        line-height: 2;
+        text-align: center;
+        height: 3rem;
+        margin: 2rem auto; }
+        .skills__list--item i {
+          margin: .5rem .5rem; } }
+
+.contact {
+  font-family: 'Noto Sans JP', sans-serif; }
+  .contact__header {
+    text-align: center; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem; }
+    .contact__form input, .contact__form textarea {
+      margin-bottom: .25rem;
+      padding: .5rem .75rem; }
+  .contact__btn {
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #2f4858;
+    font-family: inherit;
+    width: 10rem; }
+  .contact__btn:hover {
+    color: #f0f2ef;
+    background-color: #ff6b6b; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f0f2ef; }
+
+.button {
+  cursor: pointer; }

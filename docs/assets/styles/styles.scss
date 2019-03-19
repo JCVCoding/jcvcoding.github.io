@@ -1,0 +1,27 @@
+//variables
+$slateGray: #2f4858;
+$flashWhite: #f0f2ef;
+$pastelRed: #ff6b6b;
+$mintCream: #f7fff7;
+
+@import "_hero";
+@import "about-me";
+@import "_header";
+@import "_footer";
+@import "skills";
+@import "contact";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: $flashWhite;
+}
+
+.button {
+    cursor: pointer;
+}
+
