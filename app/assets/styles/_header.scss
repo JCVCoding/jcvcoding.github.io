@@ -36,9 +36,9 @@
         top: 33%;
         left: 33%;
 
-        &::before {
+        &--top {
             content: "";
-            position: absolute;
+            position: absolute; 
             top: 0;
             left: 0;
             width: inherit;
@@ -46,7 +46,7 @@
             background-color: $slateGray;
         }
 
-        span {
+        &--middle {
             content: "";
             position: absolute;
             top: 8px;
@@ -56,10 +56,10 @@
             background-color: $slateGray;
         }
 
-        &::after {
+        &--bottom {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: .1rem;
             left: 0;
             width: inherit;
             height: 2px;

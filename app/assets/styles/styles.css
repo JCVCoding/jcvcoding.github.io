@@ -55,7 +55,7 @@
     position: absolute;
     top: 33%;
     left: 33%; }
-    .toggle-menu__icon::before {
+    .toggle-menu__icon--top {
       content: "";
       position: absolute;
       top: 0;
@@ -63,7 +63,7 @@
       width: inherit;
       height: 2px;
       background-color: #2f4858; }
-    .toggle-menu__icon span {
+    .toggle-menu__icon--middle {
       content: "";
       position: absolute;
       top: 8px;
@@ -71,10 +71,10 @@
       width: inherit;
       height: 2px;
       background-color: #2f4858; }
-    .toggle-menu__icon::after {
+    .toggle-menu__icon--bottom {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: .1rem;
       left: 0;
       width: inherit;
       height: 2px;
@@ -209,7 +209,7 @@ footer {
           margin: .5rem .5rem; } }
 
 .contact {
-  font-family: inherit; }
+  font-family: 'Noto Sans JP', sans-serif; }
   .contact__header {
     text-align: center;
     font-size: 2rem;
