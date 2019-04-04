@@ -28,6 +28,7 @@
     width: 75px;
     height: 75px;
     padding: 0;
+    
 
     &__icon {
         width: 25px;
@@ -49,7 +50,7 @@
         &--middle {
             content: "";
             position: absolute;
-            top: 8px;
+            top: .5rem;
             left: 0;
             width: inherit;
             height: 2px;
@@ -59,7 +60,7 @@
         &--bottom {
             content: "";
             position: absolute;
-            bottom: .1rem;
+            top: 1rem;
             left: 0;
             width: inherit;
             height: 2px;

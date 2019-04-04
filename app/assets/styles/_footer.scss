@@ -1,5 +1,5 @@
 footer {
-    background: $slateGray;
+    background: $flashWhiteLight;
     height: 3rem;
     width: 100%;
     display: flex;
@@ -8,8 +8,9 @@ footer {
 
     p {
         text-align: center;
-        color: $mintCream;
+        color: $slateGray;
         font-size: .8rem;
+        opacity: .4;
     }
 }
 
@@ -19,8 +20,10 @@ footer {
     justify-content: center;
     margin: 2rem auto;
 
-    a i {
+    &__btn {
         color: $slateGray;
+        opacity: .5;
+        cursor: pointer;
     }
 }
 
