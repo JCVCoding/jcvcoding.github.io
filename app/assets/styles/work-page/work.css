@@ -1,0 +1,15 @@
+.portfolio__header {
+  text-align: center; }
+
+.portfolio__container {
+  padding: 0 1rem; }
+
+.portfolio__link {
+  text-decoration: none;
+  color: #2f4858; }
+  .portfolio__link__image img {
+    width: 100%; }
+  .portfolio__link__info--wrap {
+    padding: 1rem 0; }
+    .portfolio__link__info--wrap .project__title {
+      text-align: center; }
