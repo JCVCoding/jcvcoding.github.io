@@ -1,11 +1,13 @@
 .header {
     font-family: 'Noto Sans JP', sans-serif;
     width: 100%;
+    height: 3rem;
     top: 0;
     left: 0;
-    background: $flashWhite;
+    background: inherit;
     font-weight: 700;
     font-size: 1.2em;
+    display: inline-block;
     
 
     &__logo {
@@ -20,56 +22,86 @@
     }
 }
 
-.toggle-menu {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 75px;
-    height: 75px;
-    padding: 0;
+// .toggle-menu {
+//     cursor: pointer;
+//     position: absolute;
+//     background: $flashWhiteLight;
+//     top: 0;
+//     right: 0;
+//     width: 75px;
+//     height: inherit;
+//     padding: 0;
     
 
-    &__icon {
-        width: 25px;
-        height: 20px;
-        position: absolute;
-        top: 33%;
-        left: 33%;
+//     &__icon {
+//         width: 25px;
+//         height: 20px;
+//         position: absolute;
+//         top: 33%;
+//         left: 33%;
 
-        &--top {
-            content: "";
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: inherit;
-            height: 2px;
-            background-color: $slateGray;
-        }
+//         &--top {
+//             content: "";
+//             position: absolute; 
+//             top: 0;
+//             left: 0;
+//             width: inherit;
+//             height: 2px;
+//             background-color: $slateGray;
+//         }
 
-        &--middle {
-            content: "";
-            position: absolute;
-            top: .5rem;
-            left: 0;
-            width: inherit;
-            height: 2px;
-            background-color: $slateGray;
-        }
+//         &--middle {
+//             content: "";
+//             position: absolute;
+//             top: .5rem;
+//             left: 0;
+//             width: inherit;
+//             height: 2px;
+//             background-color: $slateGray;
+//         }
 
-        &--bottom {
-            content: "";
-            position: absolute;
-            top: 1rem;
-            left: 0;
-            width: inherit;
-            height: 2px;
-            background-color: $slateGray;
-        }
-    }
-}
+//         &--bottom {
+//             content: "";
+//             position: absolute;
+//             top: 1rem;
+//             left: 0;
+//             width: inherit;
+//             height: 2px;
+//             background-color: $slateGray;
+//         }
+//     }
+// }
 
 button {
     border-radius: 0;
     border: none;
+}
+
+// nav menu styles
+
+#scrollStop { //stops scroll down function above about me section
+    height: 40px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: $pastelRed;
+    position: fixed;
+    height: 60px;
+    top: -60px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 102;
+
+    .link {
+        color: $flashWhiteLight;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: $slateGray;
+    }
 }
