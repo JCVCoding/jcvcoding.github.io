@@ -1,0 +1,9 @@
+.wrapper .about {
+  padding: 0 1rem; }
+  .wrapper .about__content {
+    padding: 2rem; }
+    .wrapper .about__content__image {
+      width: 100%; }
+      .wrapper .about__content__image img {
+        width: 280px;
+        border-radius: 50%; }
