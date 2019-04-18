@@ -25,3 +25,17 @@
     }
 
 }
+
+@media (min-width: 700px) {
+    .hero {
+        height: 100vh;
+
+        &__header--large {
+            font-size: 5rem;
+        }
+
+        &__header--small {
+            font-size: 2.5rem;
+        }
+    }
+}

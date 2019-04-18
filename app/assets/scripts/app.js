@@ -50,24 +50,48 @@
 //     }
 // });
 
-//scroll functionality
+//SMOOTH SCROLL FUNCTIONALITY
 
-//variables
+//VARIABLES
+
+//page sections
 const aboutMeSection = document.getElementById("scrollStop"); //about me section header
-const scrollDownArrow = document.querySelector(".hero__btn"); //scroll down button
-
 const header = document.querySelector(".header"); //header at top of page
+const workSection = document.getElementById("work")//top of work section
+const contactSection = document.getElementById("contact")//top of contact section
+//arrows
 const scrollUpArrow = document.querySelector(".page-break__btn"); //scroll up button
+const scrollDownArrow = document.querySelector(".hero__btn"); //scroll down button
+//nav links
+const aboutMeNavLink = document.getElementById("about-link"); //about section nav link
+const workNavLink = document.getElementById("work-link"); //work section nav link
+const contactNavLink = document.getElementById("contact-link"); //work section nav link
 
-//functions 
+//FUNCTIONS
+
+//arrows
 scrollDownArrow.addEventListener("click", () => {  //scroll down function
     aboutMeSection.scrollIntoView({behavior:"smooth"});
 });
 
-//scroll up function
 scrollUpArrow.addEventListener("click", () => {
     header.scrollIntoView({behavior:"smooth"});
 });
+
+
+//nav links
+aboutMeNavLink.addEventListener("click", () => {
+    aboutMeSection.scrollIntoView({behavior:"smooth"});
+});
+
+workNavLink.addEventListener("click", () => {
+    workSection.scrollIntoView({behavior:"smooth"});
+});
+
+contactNavLink.addEventListener("click", () => {
+    contactSection.scrollIntoView({behavior:"smooth"});
+});
+
 
 // DROP DOWN MENU FUNCTIONALITY
 

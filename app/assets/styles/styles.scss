@@ -6,11 +6,12 @@ $pastelRed: #ff6b6b;
 $mintCream: #f7fff7;
 
 @import "_hero";
-@import "about-me";
 @import "_header";
 @import "_footer";
 @import "skills";
 @import "contact";
+@import "about";
+@import "work";
 
 * {
     box-sizing: border-box;

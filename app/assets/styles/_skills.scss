@@ -89,6 +89,8 @@
         flex-direction: column;
 
         &__list {
+            display: flex;
+            flex-wrap: wrap;
             list-style: none;
             padding-left: 0;
         }
@@ -97,7 +99,7 @@
             line-height: 2;
             text-align: center;
             height: 3rem;
-            margin: 2rem auto;
+            margin: auto;
             i {
                 margin: .5rem .5rem;
             }
