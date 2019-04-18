@@ -1,0 +1,52 @@
+.wrapper {
+
+    .about {
+        padding: 0 1rem;
+
+        &__header {
+            height: 11rem;
+            padding: 2rem;
+            h1 {
+                padding: 1rem;
+                font-weight: 400;
+            }
+        }   
+
+        &__content {
+            padding: 2rem;
+            
+            &__image {
+                width: 100%;
+                img {
+                    width: 280px;
+                    border-radius: 50%;
+                }
+            }
+
+            &__info {
+                line-height: 2;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+   .wrapper {
+       width: 50vw;
+       margin: 0 auto;
+       .about {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+
+           &__content {
+               
+               &__image {
+                display: flex;
+                justify-content: center;
+               }
+           }
+       }
+   }
+}
