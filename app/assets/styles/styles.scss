@@ -1,14 +1,11 @@
 //variables
-$slateGray: #2f4858;
-$flashWhite: #f0f2ef;
-$flashWhiteLight: #f5f7f4;
-$pastelRed: #ff6b6b;
-$mintCream: #f7fff7;
+$footer: #505153;
+$body: #1d1e20;
+
 
 @import "_hero";
 @import "_header";
 @import "_footer";
-@import "skills";
 @import "contact";
 @import "about";
 @import "work";
@@ -20,7 +17,8 @@ $mintCream: #f7fff7;
 body {
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: $flashWhite;
+    background-color: $body;
+    color: white;
 }
 
 .button {

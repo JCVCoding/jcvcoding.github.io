@@ -1,5 +1,5 @@
 footer {
-    background: $flashWhiteLight;
+    background:$footer;
     height: 3rem;
     width: 100%;
     display: flex;
@@ -8,9 +8,8 @@ footer {
 
     p {
         text-align: center;
-        color: $slateGray;
         font-size: .8rem;
-        opacity: .4;
+        opacity: .6;
     }
 }
 
@@ -21,9 +20,9 @@ footer {
     margin: 2rem auto;
 
     &__btn {
-        color: $slateGray;
-        opacity: .5;
+        opacity: .7;
         cursor: pointer;
+        font-size: 2rem;
     }
 }
 
@@ -44,10 +43,18 @@ footer {
 
     a {
         text-decoration: none;
-        color: $slateGray;
+        color: inherit;
     }
 
     &__button {
         margin: 0 10px;
+    }
+}
+
+@media(min-width: 700px) {
+    .page-break {
+        &__btn {
+            font-size: 3rem;
+        }
     }
 }

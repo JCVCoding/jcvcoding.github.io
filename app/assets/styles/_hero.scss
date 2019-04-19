@@ -1,14 +1,28 @@
 .hero {
-    color: $slateGray;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+
+    &__image {
+        z-index: -2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/hero-background-380w.jpg");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: contain;
+        filter: blur(2px);
+    }
     
     &__header--large {
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     &__header--small {
@@ -20,15 +34,20 @@
         color: inherit;
         position: absolute;
         bottom: 2rem;
-        opacity: .5;
+        opacity: .7;
         cursor: pointer;
+        font-size: 2rem;
     }
 
 }
 
 @media (min-width: 700px) {
     .hero {
-        height: 100vh;
+
+        &__image {
+            background-image: url("../images/hero-background-990w.jpg");
+            filter: blur(5px);
+        }
 
         &__header--large {
             font-size: 5rem;
@@ -36,6 +55,10 @@
 
         &__header--small {
             font-size: 2.5rem;
+        }
+
+        &__btn {
+            font-size: 3rem;
         }
     }
 }

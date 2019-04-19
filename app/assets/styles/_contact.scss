@@ -1,11 +1,13 @@
 .contact {
     font-family: 'Noto Sans JP', sans-serif;
-
+    margin: 3rem 0 0 0;
 
     &__header {
         text-align: center;
-        font-size: 2rem;
         font-weight: 400;
+        font-size: 2rem;
+        margin: 3rem 0;
+        padding-top: 4rem;
     }
 
     &__form {
@@ -27,26 +29,29 @@
         margin: 1rem auto;
         padding: .5rem;
         border-radius: .5rem;
-        border: 1px solid $slateGray;
+        border: 1px solid black;
         font-family: inherit;
         font-size: 1.25rem;
         font-weight: 100;
         letter-spacing: .25rem;
         width: 8rem;
+        background-color: white;
     }
     
     &__btn:hover {
-        background-color: white;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 700px) {
     .contact {
-        width: 50vw;
+        width: 45rem;
         margin: 0 auto;
 
         &__header {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
     }
 }
