@@ -34,13 +34,17 @@
 @media (min-width: 700px) {
   .hero__image {
     background-image: url("../images/hero-background-990w.jpg");
-    filter: blur(5px); }
+    filter: blur(8px); }
   .hero__header--large {
     font-size: 5rem; }
   .hero__header--small {
     font-size: 2.5rem; }
   .hero__btn {
     font-size: 3rem; } }
+
+@media (min-width: 1800px) {
+  .hero__image {
+    filter: blur(12px); } }
 
 button {
   border-radius: 0;
@@ -67,6 +71,11 @@ button {
     cursor: pointer; }
   #navbar .link:hover {
     color: #cccccc; }
+
+@media (min-width: 700px) {
+  #navbar .link {
+    font-size: 1.5rem;
+    padding: .5rem; } }
 
 footer {
   background: #505153;
@@ -127,6 +136,8 @@ footer {
     .contact__form input, .contact__form textarea {
       margin-bottom: .25rem;
       padding: .5rem .75rem; }
+    .contact__form textarea {
+      font-family: 'Noto Sans JP', sans-serif; }
   .contact__btn {
     margin: 1rem auto;
     padding: .5rem;
