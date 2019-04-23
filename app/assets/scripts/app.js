@@ -24,7 +24,7 @@ scrollDownArrow.addEventListener("click", () => {  //scroll down function
 });
 
 scrollUpArrow.addEventListener("click", () => {
-    header.scrollIntoView({behavior:"smooth"});
+    window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
 

@@ -134,8 +134,9 @@ footer {
     flex-direction: column;
     padding: 1rem 1rem; }
     .contact__form input, .contact__form textarea {
-      margin-bottom: .25rem;
       padding: .5rem .75rem; }
+    .contact__form input:nth-child(odd), .contact__form textarea:nth-child(odd) {
+      margin: 1rem 0 1rem 0; }
     .contact__form textarea {
       font-family: 'Noto Sans JP', sans-serif; }
   .contact__btn {
