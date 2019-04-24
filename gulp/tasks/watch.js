@@ -18,6 +18,10 @@ gulp.task("watch", function(){
         browserSync.reload();
     });
 
+    watch("./app/assets/scripts/*.js", function(){
+        browserSync.reload();
+    });
+
     watch("./app/assets/styles/**/*.scss", function(){
         gulp.src("./app/assets/styles/**/*.scss")
         .pipe(sass())

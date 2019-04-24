@@ -16,7 +16,8 @@
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
-    filter: blur(2px); }
+    filter: blur(2px);
+    opacity: .25; }
   .hero__header--large {
     font-weight: 700;
     font-size: 2.5rem; }
@@ -34,7 +35,8 @@
 @media (min-width: 700px) {
   .hero__image {
     background-image: url("../images/hero-background-990w.jpg");
-    filter: blur(8px); }
+    filter: blur(6px);
+    opacity: .25; }
   .hero__header--large {
     font-size: 5rem; }
   .hero__header--small {
@@ -44,7 +46,8 @@
 
 @media (min-width: 1800px) {
   .hero__image {
-    filter: blur(12px); } }
+    filter: blur(12px);
+    opacity: .25; } }
 
 button {
   border-radius: 0;
@@ -122,23 +125,15 @@ footer {
 
 .contact {
   font-family: 'Noto Sans JP', sans-serif;
-  margin: 3rem 0 0 0; }
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column; }
   .contact__header {
     text-align: center;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 3rem 0;
     padding-top: 4rem; }
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem; }
-    .contact__form input, .contact__form textarea {
-      padding: .5rem .75rem; }
-    .contact__form input:nth-child(odd), .contact__form textarea:nth-child(odd) {
-      margin: 1rem 0 1rem 0; }
-    .contact__form textarea {
-      font-family: 'Noto Sans JP', sans-serif; }
   .contact__btn {
     margin: 1rem auto;
     padding: .5rem;
@@ -148,19 +143,31 @@ footer {
     font-size: 1.25rem;
     font-weight: 100;
     letter-spacing: .25rem;
-    width: 8rem;
-    background-color: white; }
+    width: 12rem;
+    background-color: white;
+    transition: background-color .75s, border .75s;
+    transition-timing-function: ease-in-out; }
+    .contact__btn a {
+      text-decoration: none;
+      color: black; }
   .contact__btn:hover {
     background-color: black;
-    border: 1px solid white;
-    color: white; }
+    border: 1px solid white; }
+    .contact__btn:hover a {
+      color: white; }
+  .contact__description {
+    text-align: center;
+    font-size: 1.5em; }
 
-@media (min-width: 700px) {
-  .contact {
-    width: 45rem;
-    margin: 0 auto; }
-    .contact__header {
-      font-size: 2.8rem; } }
+@media (max-width: 700px) {
+  .contact__description {
+    padding: 1rem;
+    line-height: 2; }
+    .contact__description p:nth-child(even) {
+      margin-top: 1.5rem; }
+  .contact__header {
+    font-size: 2rem;
+    margin-bottom: 1rem; } }
 
 .wrapper {
   color: white; }
@@ -193,7 +200,7 @@ footer {
         display: flex;
         justify-content: center; }
       .wrapper .about__content__info {
-        font-size: 1.2rem; } }
+        font-size: 1.5em; } }
 
 .portfolio {
   padding-top: 3.75rem; }
