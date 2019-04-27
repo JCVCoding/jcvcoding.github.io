@@ -14,7 +14,8 @@ const scrollDownArrow = document.querySelector(".hero__btn"); //scroll down butt
 //nav links
 const aboutMeNavLink = document.getElementById("about-link"); //about section nav link
 const workNavLink = document.getElementById("work-link"); //work section nav link
-const contactNavLink = document.getElementById("contact-link"); //work section nav link
+const contactNavLink = document.getElementById("contact-link"); //contact section nav link
+const logo = document.getElementById("logo"); //home logo nav link
 
 //FUNCTIONS
 
@@ -39,6 +40,10 @@ workNavLink.addEventListener("click", () => {
 
 contactNavLink.addEventListener("click", () => {
     contactSection.scrollIntoView({behavior:"smooth"});
+});
+
+logo.addEventListener("click", () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
 
