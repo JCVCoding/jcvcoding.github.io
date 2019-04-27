@@ -43,7 +43,7 @@ button {
 
 @media (min-width: 700px) {
     #navbar {
-        justify-content: right;
+        justify-content: flex-end;
 
         #logo {
             position: absolute;
