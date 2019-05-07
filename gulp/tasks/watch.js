@@ -8,13 +8,15 @@ gulp.task("watch", function(){
 
     browserSync.init({
         notify: false,
-        server: {
-            baseDir: "app"
-        }
+        server: true
     });
 
 
-    watch("./app/*.html", function(){
+    watch("*.html", function(){
+        browserSync.reload();
+    });
+
+    watch("./app/assets/scripts/*.js", function(){
         browserSync.reload();
     });
 
@@ -23,8 +25,8 @@ gulp.task("watch", function(){
     });
 
     watch("./app/assets/styles/**/*.scss", function(){
-        gulp.src("./app/assets/styles/**/*.scss")
-        .pipe(sass())
+        gulp.src("./app/assets/styles/*.scss")
+        .pipe(sass({includePaths: ["./app/assets/styles/_*.scss"]}))
         .pipe(gulp.dest("./app/assets/styles"));
         browserSync.reload();
     });

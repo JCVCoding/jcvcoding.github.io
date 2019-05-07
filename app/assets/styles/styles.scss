@@ -3,12 +3,12 @@ $footer: #505153;
 $body: #1d1e20;
 
 
-@import "_hero";
-@import "_header";
-@import "_footer";
-@import "contact";
-@import "about";
-@import "work";
+@import "./hero.scss";
+@import "./footer.scss";
+@import "./contact.scss";
+@import "./about.scss";
+@import "./work.scss";
+@import "./header.scss";
 
 * {
     box-sizing: border-box;

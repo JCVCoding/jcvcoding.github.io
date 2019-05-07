@@ -14,14 +14,18 @@
 
     &__btn {
         margin: 1rem auto;
-        padding: .5rem;
+        padding: 1rem;
         border-radius: .5rem;
         border: 1px solid black;
         font-family: inherit;
         font-size: 1.25rem;
-        font-weight: 100;
+        font-weight: 700;
         letter-spacing: .25rem;
+<<<<<<< HEAD
         width: 12rem;
+=======
+        width: 14rem;
+>>>>>>> master
         background-color: white;
         transition: background-color .75s, border .75s;
         transition-timing-function: ease-in-out;

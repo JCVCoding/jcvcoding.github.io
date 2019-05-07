@@ -68,7 +68,11 @@
 @media(min-width: 1800px) {
     .hero {
         &__image {
+<<<<<<< HEAD
             filter: blur(12px);
+=======
+            filter: blur(8px);
+>>>>>>> master
             opacity: .25;
         }
     }
