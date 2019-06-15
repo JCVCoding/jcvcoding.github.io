@@ -21,11 +21,8 @@
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: .25rem;
-<<<<<<< HEAD
         width: 12rem;
-=======
         width: 14rem;
->>>>>>> master
         background-color: white;
         transition: background-color .75s, border .75s;
         transition-timing-function: ease-in-out;
@@ -66,6 +63,10 @@
         &__header {
             font-size: 2rem;
             margin-bottom: 1rem;
+        }
+
+        &__btn {
+            background-color: white;
         }
     }
 }

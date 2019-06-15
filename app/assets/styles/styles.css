@@ -46,44 +46,8 @@
 
 @media (min-width: 1800px) {
   .hero__image {
-<<<<<<< HEAD
     filter: blur(12px);
     opacity: .25; } }
-
-button {
-  border-radius: 0;
-  border: none; }
-
-#scrollStop {
-  height: 30px; }
-
-#navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #3c5c65;
-  position: fixed;
-  height: 60px;
-  top: -60px;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 102; }
-  #navbar .link {
-    color: inherit;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    cursor: pointer; }
-  #navbar .link:hover {
-    color: #cccccc; }
-
-@media (min-width: 700px) {
-  #navbar .link {
-    font-size: 1.5rem;
-    padding: .5rem; } }
-=======
-    filter: blur(8px);
-    opacity: .25; } }
->>>>>>> master
 
 footer {
   background: #505153;
@@ -148,11 +112,8 @@ footer {
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: .25rem;
-<<<<<<< HEAD
     width: 12rem;
-=======
     width: 14rem;
->>>>>>> master
     background-color: white;
     transition: background-color .75s, border .75s;
     transition-timing-function: ease-in-out; }
@@ -176,7 +137,9 @@ footer {
       margin-top: 1.5rem; }
   .contact__header {
     font-size: 2rem;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .contact__btn {
+    background-color: white; } }
 
 .wrapper {
   color: white; }
