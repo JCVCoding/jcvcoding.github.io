@@ -1,13 +1,26 @@
 import styled from "styled-components";
 
-export const FormContainer = styled.form``;
+export const FormWrapper = styled.div`
+  padding: 2rem 6rem;
+  width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+`;
 
-export const FormTitle = styled.h3``;
+export const FormContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-export const FormName = styled.div``;
+  padding: 2rem;
 
-export const FormOrg = styled.div``;
+  button {
+    margin-top: 1rem;
+  }
+`;
 
-export const FormEmail = styled.div``;
-
-export const FormMessage = styled.div``;
+export const FormTitle = styled.h3`
+  grid-column: 1 / 3;
+  justify-self: center;
+`;
