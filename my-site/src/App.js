@@ -1,13 +1,19 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+
 import "./App.css";
 
 import Header from "./Components/Header/header.component";
-import Footer from "./Components/Footer/footer.component.jsx";
+import HomePage from "./Pages/HomePage/homepage.component";
+import ProjectPage from "./Pages/ProjectPage/projectPage.component";
 
 const App = () => (
   <div>
     <Header />
-    <Footer />
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/projects" component={ProjectPage} />
+    </Switch>
   </div>
 );
 

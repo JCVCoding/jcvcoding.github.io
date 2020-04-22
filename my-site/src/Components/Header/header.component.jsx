@@ -1,21 +1,17 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
 import {
   HeaderContainer,
   LogoLinkContainer,
   HeaderLinkContainer,
-  ContactLink,
-  WorkLink,
+  HeaderLink,
 } from "./header.styles";
 
 const Header = () => (
   <HeaderContainer>
-    <LogoLinkContainer to="/">
-      <Logo />
-    </LogoLinkContainer>
+    <LogoLinkContainer to="/">JOSHUA VLADIA</LogoLinkContainer>
     <HeaderLinkContainer>
-      <WorkLink to="/work">Work</WorkLink>
-      <ContactLink to="/contact">Contact</ContactLink>
+      <HeaderLink to="/projects">Projects</HeaderLink>
+      <HeaderLink to="/contact">Contact</HeaderLink>
     </HeaderLinkContainer>
   </HeaderContainer>
 );
