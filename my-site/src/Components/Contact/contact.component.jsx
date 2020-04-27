@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 import { FormContainer, FormTitle, FormWrapper } from "./contact.styles";
 
@@ -16,13 +17,45 @@ class ContactForm extends Component {
     };
   }
 
+  clearFormState = () => {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
+  sendData = async () => {
+    const { name, email, subject, message } = this.state;
+
+    try {
+      await axios({
+        method: "POST",
+        url: "http://localhost:5000/contact",
+        data: {
+          name,
+          email,
+          subject,
+          message,
+        },
+      });
+      alert("Success");
+      this.clearFormState();
+    } catch (err) {
+      alert("ERROR");
+    }
+  };
+
   handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(name);
     this.setState({ [name]: value });
   };
 
-  handleSubmit = (event) => {};
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.sendData();
+  };
 
   render() {
     const { email, message, name, subject } = this.state;
