@@ -42,17 +42,25 @@ app.get("/contact", (req, res) => {
 app.post("/contact", (req, res) => {
   const { name, email, message, subject } = req.body;
 
+  const fromGmail = (e) => {
+    let emailAtStart = e.indexOf("@");
+    let emailMinusDomain = e.slice(0, emailAtStart);
+    let emailModed = emailMinusDomain + "@gmail.com";
+    return emailModed;
+  };
+
   let msg = {
-    to: "jvcoding9407@gmail.com",
-    from: `${email}`,
+    to: process.env.REACT_APP_USER_EMAIL,
+    from: `${name} ${fromGmail(email)}`,
     subject,
-    text: `Message from: ${name}
+    text: `Email from: ${email}
     ${message}`,
   };
 
   try {
     transporter.sendMail(msg);
-    return msg;
+    res.send("Success");
+    res.sendStatus(200);
   } catch (err) {
     res.status(422).send(err);
   }

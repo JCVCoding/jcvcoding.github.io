@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
+  grid-area: header;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 4rem;

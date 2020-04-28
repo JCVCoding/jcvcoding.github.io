@@ -1,13 +1,13 @@
 import React from "react";
 
 import { HomePageContainer } from "./homepage.styles";
-import Footer from "../../Components/Footer/footer.component";
+import HomePageHero from "../../Components/HomePageHero/homePageHero.component";
 
 import "./homepage.styles";
 
 const HomePage = () => (
   <HomePageContainer>
-    <Footer />
+    <HomePageHero />
   </HomePageContainer>
 );
 
