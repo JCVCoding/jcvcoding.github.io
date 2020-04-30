@@ -5,6 +5,7 @@ import "./App.css";
 
 import Header from "./Components/Header/header.component";
 import SocialBar from "./Components/SocialBar/socialBar.component";
+import Menu from "./Components/Menu/menu.component";
 import HomePage from "./Pages/HomePage/homepage.component";
 import ProjectPage from "./Pages/ProjectPage/projectPage.component";
 import ContactPage from "./Pages/ContactPage/contactPage.component";
@@ -13,6 +14,7 @@ const App = () => (
   <div className="container">
     <Header />
     <SocialBar />
+    <Menu />
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/projects" component={ProjectPage} />

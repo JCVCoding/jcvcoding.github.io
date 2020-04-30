@@ -5,5 +5,4 @@ export const HomePageHeroContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: #ff6666;
-  border: 2px solid black;
 `;
