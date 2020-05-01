@@ -3,16 +3,16 @@ import styled, { css } from "styled-components";
 export const SocialContainer = styled.div`
   grid-area: sidebar;
 
-  display: grid;
-  grid-template-rows: 40% 1fr minmax(2rem, 12rem);
+  /* display: grid;
+  grid-template-rows: 40% 1fr minmax(2rem, 12rem); */
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 4rem;
   padding: 2rem 1rem;
-  align-self: flex-end;
 `;
 
 export const SocialLinkContainer = styled.div`
-  grid-row: 1 / -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,4 +27,13 @@ export const SocialLink = styled.a`
   &:last-child {
     margin-top: 1.5rem;
   }
+`;
+
+export const SocialLinkIcon = styled.svg`
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: black;
+  fill: black;
 `;
