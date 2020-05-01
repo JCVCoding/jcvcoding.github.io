@@ -6,6 +6,11 @@ import {
   MenuIconLine,
   MenuTextContainer,
   MenuTextLetter,
+  MenuContainer,
+  MenuLink,
+  MenuLinkContainer,
+  MenuWrapper,
+  MenuContent,
 } from "./menu.styles";
 
 class Menu extends React.Component {
@@ -27,19 +32,36 @@ class Menu extends React.Component {
   render() {
     const { isToggled } = this.state;
     return (
-      <MenuToggleContainer onClick={this.handleClick} isToggled={isToggled}>
-        <MenuIconContainer>
-          <MenuIconLine />
-          <MenuIconLine />
-          <MenuIconLine />
-        </MenuIconContainer>
-        <MenuTextContainer>
-          <MenuTextLetter>m</MenuTextLetter>
-          <MenuTextLetter>e</MenuTextLetter>
-          <MenuTextLetter>n</MenuTextLetter>
-          <MenuTextLetter>u</MenuTextLetter>
-        </MenuTextContainer>
-      </MenuToggleContainer>
+      <MenuWrapper>
+        <MenuToggleContainer onClick={this.handleClick} isToggled={isToggled}>
+          <MenuIconContainer>
+            <MenuIconLine />
+            <MenuIconLine />
+            <MenuIconLine />
+          </MenuIconContainer>
+          <MenuTextContainer>
+            <MenuTextLetter>m</MenuTextLetter>
+            <MenuTextLetter>e</MenuTextLetter>
+            <MenuTextLetter>n</MenuTextLetter>
+            <MenuTextLetter>u</MenuTextLetter>
+          </MenuTextContainer>
+        </MenuToggleContainer>
+
+        <MenuContainer isToggled={isToggled}>
+          <MenuLinkContainer>
+            <MenuLink to="/" onClick={this.handleClick}>
+              Home
+            </MenuLink>
+            <MenuLink to="/projects" onClick={this.handleClick}>
+              Projects
+            </MenuLink>
+            <MenuLink to="/contact" onClick={this.handleClick}>
+              Contact
+            </MenuLink>
+          </MenuLinkContainer>
+          <MenuContent>Hello</MenuContent>
+        </MenuContainer>
+      </MenuWrapper>
     );
   }
 }
